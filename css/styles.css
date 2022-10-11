@@ -1,4 +1,4 @@
-:root{ custom properties llamado root
+:root{ /* custom properties llamado root */
     --blanco: #FFFFFF;
     --obscuro: #212121;
     --primario: #FFC107;
@@ -12,6 +12,7 @@ html {
 
 body {
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
 
 /* Adaptación de pixeles relativa al dispositivo 1rem = 10px*/
