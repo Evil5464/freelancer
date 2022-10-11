@@ -1,5 +1,13 @@
+:root{ custom properties llamado root
+    --blanco: #FFFFFF;
+    --obscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0997a7;
+    --gris: #757575;
+}
+
 html {
-    font-size: 62.2%;
+    font-size: 62.5%;
 }
 
 body {
@@ -8,11 +16,11 @@ body {
 
 /* Adaptación de pixeles relativa al dispositivo 1rem = 10px*/
 
-h1 {
+.titulo {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3.8rem;
 }
 
-h1 span {
-    font-size: 1rem;
+.titulo span {
+    font-size: 2rem;
 }
