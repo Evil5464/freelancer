@@ -1,4 +1,5 @@
-:root{ /* custom properties llamado root */
+:root {
+    /* custom properties llamado root */
     --blanco: #FFFFFF;
     --obscuro: #212121;
     --primario: #FFC107;
@@ -26,21 +27,29 @@ body {
     font-size: 2rem;
 }
 
-.nav-bg{
+.nav-bg {
     background-color: var(--secundario);
 }
 
 .contenedor {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 .navegacion-principal {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navegacion-principal a{
+@media(min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a {
     padding: 1rem;
     color: var(--blanco);
     text-decoration: none;
@@ -48,7 +57,11 @@ body {
     font-weight: bold;
 }
 
-.navegacion-principal  a:hover{
+.navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--obscuro);
+} 
+
+.hero{
+    background-image: url(../img/hero.jpg);
 }
